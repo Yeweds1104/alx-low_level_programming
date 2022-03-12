@@ -4,14 +4,16 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/*This code prints the last difit of random number*/
+
 int main(void)
 {
 	int n;
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int last_digit;
 
 	last_digit = n%10;
 
