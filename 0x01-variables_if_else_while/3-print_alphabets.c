@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int length, i;
+	int lower_case_length, i, upper_case_length;
 
 	char lower_case[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 		'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',

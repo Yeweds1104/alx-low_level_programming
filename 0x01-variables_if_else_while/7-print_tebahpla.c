@@ -17,8 +17,8 @@ int main(void)
 
 	length = sizeof(lower_case);
 
-	for (i = length; i >= 0; i--)
-		putchar(lower_case[i-1]);
+	for (i = length; i > 0; i--)
+		putchar(lower_case[i - 1]);
 
 	putchar('\n');
 
