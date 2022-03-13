@@ -17,8 +17,8 @@ int main(void)
 
 	for (i = 0; i < length; i++)
 	{
-		putchar(single_digit_numbers[i] + '0');
-		putchar(', ');
+		putchar('single_digit_numbers[i]');
+		putchar(', ' + '0');
 	}
 	putchar('\n');
 

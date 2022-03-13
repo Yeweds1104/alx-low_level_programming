@@ -16,7 +16,7 @@ int main(void)
 	length = sizeof(single_digit_numbers);
 
 	for (i = 0; i < length; i++)
-		putchar(single_digit_numbers[i] + '0');
+		putchar('single_digit_numbers[i]' + '0');
 
 	putchar('\n');
 
