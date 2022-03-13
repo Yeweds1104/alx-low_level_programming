@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* main - prints all single digit numbers of base 10 starting from 0
+* main - prints all possible combinations of single digit numbers
 * Return: 0 if exited properly, non zero otherwise
  **/
 
@@ -16,8 +16,10 @@ int main(void)
 	length = sizeof(single_digit_numbers);
 
 	for (i = 0; i < length; i++)
+	{
 		putchar(single_digit_numbers[i] + '0');
-
+		putchar(", ");
+	}
 	putchar('\n');
 
 	return (0);
