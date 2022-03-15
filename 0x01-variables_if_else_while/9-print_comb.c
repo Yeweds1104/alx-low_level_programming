@@ -22,6 +22,7 @@ int main(void)
 		if (i == length)
 			break;
 		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 
