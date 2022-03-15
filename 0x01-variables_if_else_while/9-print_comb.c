@@ -13,12 +13,15 @@ int main(void)
 
 	int single_digit_numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-	length = sizeof(single_digit_numbers);
+	length = sizeof(single_digit_numbers) / sizeof(int);
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i < length;)
 	{
-		putchar('single_digit_numbers[i]');
-		putchar(', ' + '0');
+		putchar(single_digit_numbers[i] + '0');
+		i++;
+		if (i == length)
+			break;
+		putchar(',');
 	}
 	putchar('\n');
 
