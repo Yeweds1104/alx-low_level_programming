@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (l = 0; l < length; l++)
 					{
-						if (i <= k && j < l)
+						if (i <= k && j < l && i <= j)
 						{
 						putchar(single_digit_numbers[i]
 								+ '0');
