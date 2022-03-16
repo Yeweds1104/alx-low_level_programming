@@ -1,10 +1,10 @@
 
 /**
- * main - prints the sign of a number
- * Return: 0 and prints 0 if it is zero
- * Return: 1 and prints + if it is positive
- * Return: -1 and prints - if it is negative
- *
+ * print_sign - prints the sign of a number
+ * Return: 0 and prints 0 if it is zero,
+ *  1 and prints + if it is positive,
+ *  -1 and prints - if it is negative
+ * 'n': integer parameter to be checked
 **/
 
 int print_sign(int n)

@@ -5,8 +5,7 @@
  *
 **/
 
-int _abs(int n)
+void jack_bauer(void)
 {
-	n = abs(n);
-	return (n);
+	
 }
