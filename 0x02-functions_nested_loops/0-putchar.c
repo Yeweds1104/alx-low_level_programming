@@ -9,7 +9,7 @@
 int main(void)
 {
 	char a[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	int length;
+	int length, i;
 
 	length = sizeof(a) / sizeof(char);
 

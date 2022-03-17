@@ -4,7 +4,7 @@
 /**
  * print_to_98 - prints all natural numbers from n to 98
  * Return: 0 if executed well
- * n: integer parameter
+ * 'n' - integer parameter
  *
 **/
 
@@ -38,5 +38,4 @@ void print_to_98(int n)
 		printf("%d", 98);
 	}
 
-	return (0);
 }
