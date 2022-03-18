@@ -7,7 +7,7 @@
 
 void more_numbers(void)
 {
-	char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+	char ch[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
 	'11', '12', '13', '14'};
 
 	int i, j;
@@ -15,10 +15,11 @@ void more_numbers(void)
 	for (i = 0; i < 10; i++)
 	{
 		j = 0;
+
 		while (j < 14)
 		{
 			_putchar(ch[j]);
-			ch++;
+			j++;
 		}
 
 		_putchar('\n');
