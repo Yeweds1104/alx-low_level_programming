@@ -1,30 +1,35 @@
+
 #include "main.h"
 
 /**
- * print_alphabet - prints lowercase alphabets 10 times
- * Return: 0 if exited properly
+ * print_square - prints square
+ * @size: the size of the square
  *
 **/
 
-void print_alphabet(void)
+void print_square(int size)
 {
-	char c;
-	int i;
+	char ch;
+	int i, j;
 
-	i = 0;
+	ch = 35;
 
-	while (i < 10)
+	if (size <= 0)
 	{
-		c = 'a';
-
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-
 		_putchar('\n');
 	}
 
-	return (0);
+	else
+	{
+		for (i = 0; i < size; i++)
+		{
+
+			for (j = 0; j < size; j++)
+			{
+				_putchar(ch);
+			}
+
+			_putchar('\n');
+		}
+	}
 }
