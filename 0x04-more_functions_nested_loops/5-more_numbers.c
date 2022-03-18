@@ -7,16 +7,17 @@
 
 void more_numbers(void)
 {
-	char ch;
-	int i;
+	char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+	'11', '12', '13', '14'};
 
-	ch = '0';
+	int i, j;
 
 	for (i = 0; i < 10; i++)
 	{
-		while (ch <= '14')
+		j = 0;
+		while (j < 14)
 		{
-			_putchar(ch);
+			_putchar(ch[j]);
 			ch++;
 		}
 
