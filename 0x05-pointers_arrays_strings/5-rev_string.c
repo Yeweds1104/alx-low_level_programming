@@ -11,9 +11,7 @@ void rev_string(char *s)
 
 	length = sizeof(s) - 1;
 
-	int a[];
-
-	a[length];
+	char a[length];
 
 	j = 0;
 
