@@ -11,9 +11,12 @@ void puts2(char *str)
 
 	length = sizeof(str);
 
-	for (i = 0; i < length - 1; i += 2)
+	for (i = 0; i < length; i += 2)
 	{
-		_putchar(*(str + i));
+		if (*(str + i) == '\0')
+			break;
+		else if
+			_putchar(*(str + i));
 	}
 	_putchar('\n');
 }
