@@ -13,13 +13,11 @@ char *_strcpy(char *dest, char *src)
 
 	i = 0;
 
-	/*length = sizeof(src);*/
-
 	while (*(src + i) != '\0')
 	{
 		*(dest + i) = *(src + i);
 		i++;
 	}
 
-	return (dest);
+	return (*dest);
 }

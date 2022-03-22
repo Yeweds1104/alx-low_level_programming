@@ -17,19 +17,15 @@ void rev_string(char *s)
 		length++;
 		i++;
 	}
+	j = length;
+	length--;
+	char c;
 
-	char a[length];
-
-	j = 0;
-
-	for (i = length - 1; i >= 0; i--)
+	for (i = 0; i <= length || i == length + 1; i++, length--)
 	{
-		a[j] = *(s + i);
-		j++;
+		c = *(s + i);
+		*(s + i) = *(s + length);
+		*(s + length) = c;
 	}
-
-	for (i = 0; i < j + 1; i++)
-	{
-		*(s + i) = a[i];
-	}
+	*(s + j) = '\0';
 }
