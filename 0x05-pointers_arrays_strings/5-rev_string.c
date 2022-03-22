@@ -9,7 +9,14 @@ void rev_string(char *s)
 {
 	int i, j, length;
 
-	length = sizeof(s) / sizeof(char);
+	length = 0;
+	i = 0;
+
+	while (*(s + i) != '\0')
+	{
+		length++;
+		i++;
+	}
 
 	char a[length];
 
