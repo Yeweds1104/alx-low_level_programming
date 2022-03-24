@@ -5,6 +5,7 @@
  * @dest: pointer to a string
  * @src: pointer to a string
  * @n: byte to be copied
+ * Return: pointer to char
  */
 
 char *_strncat(char *dest, char *src, int n)
