@@ -6,7 +6,7 @@
  * @c: character to be checked
  */
 
-int _islower(int *c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
@@ -16,21 +16,28 @@ int _islower(int *c)
 
 
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase
- * @s: string to be converted to uppercase
- * Return: pointer to uppercase string
+ * cap_string - capitalize all words of a string
+ * @s: string to be capitalized
+ * Return: pointer to capitalized string
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
+	char j;
 
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		if (_islower(*(s + i) != 0))
+		j = *(s + i);
+		if (j == 32 || j == 9 || j == 10 || j == 44 || j == 59 ||
+				j == 46 || j == 33 || j == 63 || j == 34 ||
+				j == 40 || j == 41 || j == 123 || j == 125)
 		{
-			*(s + i) = *(s + i) - 32;
+			if (_islower(*(s + i + 1)) == 1)
+			{
+				*(s + i) = *(s + i) - 32;
+			}
 		}
 
 		i++;
