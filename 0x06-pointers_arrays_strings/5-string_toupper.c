@@ -13,7 +13,7 @@ char *string_toupper(char *s)
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		if (_islower(*(s + i) == 1))
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
 			*(s + i) = *(s + i) - 32;
 		}
