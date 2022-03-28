@@ -8,17 +8,20 @@
  * Return: pointer to memory
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
 	int i;
 
 	i = 0;
-
-	while (i < n)
+	while (*(*s + i) != '\0')
 	{
-		*(*dest + i) = *(*src + i);
+		if (*(*s + i) == c)
+		{
+			return (*s + i);
+		}
+
 		i++;
 	}
 
-	return (*dest);
+	return NULL;
 }
