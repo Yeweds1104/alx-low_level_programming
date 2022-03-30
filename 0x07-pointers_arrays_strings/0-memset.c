@@ -4,6 +4,7 @@
  * _memset - fills the first n bytes of the memory pointed by s with b
  * @s: pointer to a memory
  * @b: character to be filled
+ * @n: integer data type
  * Return: pointer to memory
  */
 
